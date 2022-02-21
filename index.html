@@ -11,22 +11,36 @@
     </head>
     <body>
         <header class="header">
-            <img class="header header__logo" src="./assets/logo.svg"></img>
-            <img class="header header__toggle-btn" src="./assets/icon-hamburger.svg"><img>
-            <nav class="header header__nav">
+            <img class="header__logo" src="./assets/logo.svg"></img>
+            <nav class="header__nav">
                 <ul>
-                    <li class=><a class="header header__nav-link" href="/">Home</a></li>
-                    <li class=><a class="header header__nav-link" href="/">About</a></li>
-                    <li class=><a class="header header__nav-link" href="/">Contact</a></li>
-                    <li class=><a class="header header__nav-link" href="/">Blog</a></li>
-                    <li class=><a class="header header__nav-link" href="/">Carers</a></li>
+                    <li class=><a class="header__nav-link" href="/">Home</a></li>
+                    <li class=><a class="header__nav-link" href="/">About</a></li>
+                    <li class=><a class="header__nav-link" href="/">Contact</a></li>
+                    <li class=><a class="header__nav-link" href="/">Blog</a></li>
+                    <li class=><a class="header__nav-link" href="/">Carers</a></li>
                 </ul>
             </nav>
+            <img class="header__toggle-btn header__toggle-btn--inactive" src="./assets/icon-hamburger.svg"><img>
         </header>
+        <section class="modal modal--inactive">
+            <nav class="modal__nav">
+                <ul>
+                    <li class=><a class="modal__nav-link" href="/">Home</a></li>
+                    <li class=><a class="modal__nav-link" href="/">About</a></li>
+                    <li class=><a class="modal__nav-link" href="/">Contact</a></li>
+                    <li class=><a class="modal__nav-link" href="/">Blog</a></li>
+                    <li class=><a class="modal__nav-link" href="/">Carers</a></li>
+                </ul>
+            </nav>
+        </section>
         <section class="hero">
-            <h1>Next generation digital banking</h1>
-            <p>Take your financial life online. Your Easybank account will be a one-stop shop for spending, saving, budgeting, investing, and much more.</p>
-            <button class="cta">Request Invite</button>
+            <img class="hero__img" src="./assets/image-mockups.png">
+            <section class="hero__copy">
+                <h1>Next generation digital banking</h1>
+                <p>Take your financial life online. Your Easybank account will be a one-stop shop for spending, saving, budgeting, investing, and much more.</p>
+                <button class="btn">Request Invite</button>
+            </section>
         </section>
         <section class="features">
             <h1>Why choose Easybank?</h1>
@@ -105,6 +119,6 @@
                 <p>©Easybank. All Rights Reserved</p>
             </div>
         </footer>
-        <!-- <script src="" async defer></script> -->
+        <script src="./script.js" async defer></script>
     </body>
 </html>
