@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,700;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,300&display=swap');
 
 :root {
     --dark-blue: hsl(233, 26%, 24%);
@@ -12,6 +12,7 @@
 
     font-family: 'Public Sans', sans-serif;
     font-size: 18px;
+    font-weight: 400;
 }
 
 * {
@@ -38,10 +39,6 @@
     cursor: pointer;
 }
 
-footer {
-    background-color: darkblue;
-}
-
 .header__nav {
     display: none;
 }
@@ -50,9 +47,25 @@ footer {
     display: none;
 }
 
+.btn {
+    border: none;
+    height: 50px;
+    width: 175px;
+    border-radius: 25px;
+    background: var(--bright-cyan);
+    background: linear-gradient(117deg, var(--lime-green) 0%, var(--bright-cyan) 100%);
+    color: var(--white);
+
+    font-size: 0.9rem;
+    /* font-weight: bold; */
+    /* letter-spacing: 0.5px; */
+    font-family: "Public Sans", sans-serif;
+}
+
 .hero {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 100%;
+    margin: 0 0 5%;
 
     display: flex;
     flex-direction: column;
@@ -63,14 +76,8 @@ footer {
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: top -50px;
-    
+
     overflow: hidden;
-}
-
-.hero::before {
-    content: "";
-    width: 100%;
-
 }
 
 .hero__img {
@@ -78,18 +85,32 @@ footer {
     margin: 0 1%;
     position: relative;
     top: -140px;
-
 }
 
-.hero__copy {
-    border: 1px solid red;
+.hero__content {
+    /* border: 1px solid red; */
     padding: 5%;
+    margin: -40% 0 0;
+    
+    text-align: center;
 }
 
 .hero__header {
-    font-size: 2.5rem;
-    font-weight: 300;
+    margin: 0 0 5%;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--dark-blue);
+    
+    text-align: center;
 }
+
+.hero__copy {
+    margin: 0 0 10%;
+    color: var(--grayish-blue);
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+}
+
 @media screen and (min-width: 429px) {
 
 }
