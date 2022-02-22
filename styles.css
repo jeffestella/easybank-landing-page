@@ -111,6 +111,59 @@
     line-height: 1.25rem;
 }
 
+.features {
+    width: 80%;
+    padding: 15% 10% 10%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: var(--very-light-gray);
+}
+
+.features__header {
+    margin: 0 0 5%;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--dark-blue);
+    
+    text-align: center;
+}
+
+.features__copy {
+    margin: 0 0 10%;
+    color: var(--grayish-blue);
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+}
+
+.features-card {
+    /* border: 1px solid red; */
+    min-height: 275px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.features-card__header {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--dark-blue);
+    
+}
+
+.features-card__copy {
+    color: var(--grayish-blue);
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.25rem;
+}
+
 @media screen and (min-width: 429px) {
 
 }
