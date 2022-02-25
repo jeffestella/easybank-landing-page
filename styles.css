@@ -373,5 +373,47 @@
 }
 
 @media screen and (min-width: 429px) {
+    .hero__content {
+        margin: -20% 0 0;
+    }
+
+    .features__copy {
+        font-size: 1rem;
+    }
+
+    .features-card__header {
+        font-size: 1.5rem;
+    }
+
+    .features-card__copy {
+        font-size: 1rem;
+    }
+
+    .articles-card__byline {
+        font-size: 0.85rem;
+    }
+
+    .articles-card__title {
+        font-size: 1.1rem;
+    }
+
+    .articles-card__blurb {
+        font-size: 0.9rem;
+    }
+
+    .footer-nav__list-item {
+        font-size: 1rem;
+    }
+
+    .btn--footer {
+        scale: 1;
+    }
+}
+
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 768px) {
 
 }
