@@ -4,6 +4,8 @@
     --dark-blue: hsl(233, 26%, 24%);
     --lime-green: hsl(136, 65%, 51%);
     --bright-cyan: hsl(192, 70%, 51%);
+    --lime-green-lighter: hsl(136, 65%, 80%);
+    --bright-cyan-lighter: hsl(192, 70%, 80%);
 
     --grayish-blue: hsl(233, 8%, 62%);
     --light-grayish-blue: hsl(220, 16%, 96%);
@@ -136,12 +138,18 @@
     background: var(--bright-cyan);
     background: linear-gradient(117deg, var(--lime-green) 0%, var(--bright-cyan) 100%);
     color: var(--white);
-
+    
     font-size: 0.9rem;
     /* font-weight: bold; */
     /* letter-spacing: 0.5px; */
     font-family: "Public Sans", sans-serif;
     cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--bright-cyan-lighter);
+    background: linear-gradient(117deg, var(--lime-green-lighter) 0%, var(--bright-cyan-hover) 100%);
+
 }
 
 .hero {
@@ -469,6 +477,27 @@
         border-bottom-width: 4px;
         border-style: solid;
         color: var(--dark-blue);
+    }
+    
+    .btn:hover {
+        position: relative;
+    }
+    
+    .btn:hover::after {
+        content: "Request Invite";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 25px;
+        width: 100%;
+        height: 100%;
+        
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        
+        background: linear-gradient(117deg, var(--lime-green-lighter), var(--bright-cyan-lighter));
     }
     .btn--header {
         display: inline;
