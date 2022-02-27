@@ -676,6 +676,10 @@
         text-align: left;
     }
 
+    .footer-nav__list-link:hover {
+        color: var(--lime-green);
+    }
+
     .footer__cta-copyright {
         align-items: flex-end;
         position: relative;
