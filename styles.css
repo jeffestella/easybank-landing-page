@@ -359,7 +359,7 @@
     list-style: none;
 }
 
-.footer-nav__list-item {
+.footer-nav__list-link {
     font-weight: 300;
     font-size: 0.8rem;
     text-decoration: none;
@@ -626,6 +626,60 @@
     .articles-card__blurb {
         font-size: 0.7rem;
         line-height: 1.05rem;
+    }
+
+    .footer {
+        padding: 1% 5%;
+        height: 200px;
+        width: 100%;
+        position: relative;
+
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .footer__logo-socials {
+        width: 10%;
+    }
+    
+    .footer__socials {
+        justify-content: space-between;
+    }
+
+    .footer__social-icon:hover {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(58%) saturate(593%) hue-rotate(82deg) brightness(95%) contrast(85%);
+    }
+
+    .footer-nav {
+        margin-left: 10%;
+        height: 60%;
+        width: 30%;
+    }
+    
+    .footer-nav__list {
+        /* border: 1px solid red; */
+        min-height: 100px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+
+    }
+
+    .footer-nav__list-item {
+        padding: 2% 0 0 10%;
+    }
+
+    .footer-nav__list-link {
+        text-align: left;
+    }
+
+    .footer__cta-copyright {
+        align-items: flex-end;
+        position: relative;
+        right: -20%;
     }
 
 }
