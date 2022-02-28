@@ -624,7 +624,7 @@
     }
 
     .articles-card__blurb {
-        font-size: 0.7rem;
+        font-size: 0.67rem;
         line-height: 1.05rem;
     }
 
@@ -641,6 +641,9 @@
 
     .footer__logo-socials {
         width: 10%;
+        height: 50%;
+        justify-content: space-between;
+        align-items: flex-start;
     }
     
     .footer__socials {
