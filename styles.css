@@ -443,7 +443,8 @@
     }
 
     .header__logo {
-        position:inherit;
+        position: inherit;
+        width: 160px;
     }
 
     .header-nav {
@@ -513,6 +514,7 @@
 
     .hero {
         flex-flow: row-reverse nowrap;
+        background-color: var(--very-light-gray);
         background-image: url("./assets/bg-intro-desktop.svg");
         background-size: 90%;
         background-position-y: top -25vh;
@@ -550,9 +552,12 @@
         width: 90%;
         margin: -15% 0 0;
         padding: 7% 10%;
+
         flex-flow: row wrap;
         justify-content: flex-start;
         align-items: center;
+
+        background-color: var(--light-grayish-blue);
     }
 
     .features__content {
