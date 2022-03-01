@@ -499,9 +499,6 @@
         
         background: linear-gradient(117deg, var(--lime-green) 0%, var(--bright-cyan) 100%);
     }
-    .header-nav__link:hover {
-
-    }
     
     .btn {
         scale: 0.9;
@@ -665,7 +662,7 @@
     }
 
     .footer__logo-socials {
-        width: 10%;
+        width: clamp(150px,10%, 250px);
         height: 50%;
         justify-content: space-between;
         align-items: flex-start;
@@ -682,11 +679,10 @@
     .footer-nav {
         margin-left: 10%;
         height: 60%;
-        width: 30%;
+        width: clamp(450px, 30%, 500px);
     }
     
     .footer-nav__list {
-        /* border: 1px solid red; */
         min-height: 100px;
         height: 100%;
         width: 100%;
@@ -697,7 +693,7 @@
     }
 
     .footer-nav__list-item {
-        padding: 2% 0 0 10%;
+        margin: 2% 0;
     }
 
     .footer-nav__list-link {
