@@ -556,7 +556,7 @@
 
     .hero__header {
         text-align: left;
-        font-size: 3rem;
+        font-size: 2.7rem;
     }
 
     .hero__copy {
@@ -710,4 +710,10 @@
         right: -20%;
     }
 
+}
+
+@media screen and (min-width: 1200px) {
+    .hero__header {
+        font-size: 3rem;
+    }
 }
